@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 
 class RegistrationForm extends Component {
+    constructor(props) {
+        super(props);
+        this.nameInput = React.createRef();
+    }
+    
     handleSubmit(event) {
         event.preventDefault();
-        const name = event.target.name.value;
-        const password = event.target.password.value;
+        const name = this.nameInput.current.value;
         console.log('Name: ', name);
-        console.log('Password: ', password);
     }
     
     render() {
@@ -17,7 +20,7 @@ class RegistrationForm extends Component {
                     <div className="form-group">
                         <label htmlFor="name">Name *</label>
                         <input type="text" className="registration__control"
-                            name="name" id="name"/>
+                            name="name" id="name" ref={this.nameInput}/>
                     </div>
                 <div className="form-group">
                     <label htmlFor="password">Password *</label>
