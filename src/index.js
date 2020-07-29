@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './playingwithdanger/App';
+import RouterApp from './router/router-app';
 import './index.css';
 
 ReactDOM.render(
-    <App />,
+    <RouterApp />,
     document.getElementById('root')
 );
