@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-
-import DemonynApp from './demonymapp/demonymApp';
+import Clicks from './clicks/clicks';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <DemonynApp/>
+        <Clicks />
       </div>
     );
   }
