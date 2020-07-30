@@ -11,7 +11,7 @@ export default class Nav extends Component {
                         <Link to={`/SOMETHING/components`}>Components</Link>
                     </li>
                     <li>
-                        <Link to={`/SOMETHING/prop-states`}>Props States</Link>
+                        <Link to={`/SOMETHING/props-states`}>Props States</Link>
                     </li>
                 </ul>
             </div>
